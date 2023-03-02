@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+}
+.site-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.site-header h1, 
+.site-header h2{
+    font-size: 90px;
+    text-align: center;
+    margin-top: 50px;
+    animation: text-color 5s linear infinite;
+}
+@keyframes text-color {
+    0%{
+        color: #231557;
+    }
+    29%{
+        color: #44107a;
+    }
+    67%{
+        color:  #ff1361;
+    }
+    100%{
+        color:  #fff800;
+    }
+}
+.counting{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    font-size: 70px;
+}
+.n-1{
+    color:red;
+    animation: fade-in 4s ease-in;
+}
+.n-2{
+    color: orange;
+    animation: fade-in 6s ease-in;
+}
+.n-3{
+    color: green;
+    animation: fade-in 8s ease-in;
+}
+.go{
+    color: #fff800;
+    animation: fade-in 10s ease-in;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        font-size: 200px;
+    }
+}
+.link{
+    margin-top: 40px;
+    text-align: center;
+    animation: fade-in-2 3s;
+}
+.link a{
+    font-size: 30px;
+    animation: text-color 7s infinite;
+}
+.link button{
+    border-radius: 42px;
+    font-family: Courier New;
+    padding: 20px;
+    text-decoration: none;
+    background-color:rgb(160, 160, 177) ;
+    cursor: pointer;
+}
+.link button:hover {
+    background-color: goldenrod;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.25) inset,
+                  -8px -8px 12px rgba(255,255,255,0.3) inset;
+}
+@keyframes fade-in-2 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade-in-3 {
+    0%{
+        background-color: #3A1078;
+    }
+    20%{
+
+        background-color: #4E31AA;
+    }
+    40%{
+
+        background-color: #2F58CD;
+    }
+    60%{
+
+        background-color: #2F58CD;
+    }
+    80%{
+
+        background-color: rgb(77, 215, 250);
+    }
+    100%{
+    }
+}
+.race{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../img/21110038.jpg);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+.car-1{
+    position: absolute;
+    left: 0;
+    top: 175px;
+    width: 105px;
+    height: 55px;
+    background-color: blue;
+    animation: moving-cars 4s linear 10s;
+}
+.car-2{
+    position: absolute;
+    left: 0;
+    top: 250px;
+    width: 105px;
+    height: 55px;
+    background-color: rgb(12, 12, 12);
+    animation: moving-cars 5s ease 10s;
+}
+.car-3{
+    position: absolute;
+    left: 0;
+    top: 375px;
+    width: 105px;
+    height: 55px;
+    background-color: rgb(246, 51, 2);
+    animation: moving-cars 4s ease-in-out 10s;
+}
+.car-4{
+    position: absolute;
+    left: 0;
+    top: 450px;
+    width: 105px;
+    height: 55px;
+    background-color: rgb(55, 255, 0);
+    animation: moving-cars 5s ease-out 10s;
+}
+@keyframes moving-cars {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+.winner{
+    position: absolute;
+    top: 300px;
+    font-size: 75px;
+    animation: hidden-item 17s ease-in;
+    color: #020202;
+    text-shadow: 0 0 10px #FFFFFF;
+}
+@keyframes hidden-item {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.back-to-btn{
+    position: absolute;
+    top: 700px;
+}
+.back-to-btn button{
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:16px;
+	border:1px solid #d02718;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:17px;
+	padding: 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+    animation: hidden-item 17s ease-in;
+}
+.back-to-btn button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
